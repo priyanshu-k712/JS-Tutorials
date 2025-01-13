@@ -41,4 +41,27 @@ const myFunction = function () {
 };
 
 // Typeof Function:
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
+
+
+// Types of Memories: Stack, Heap.
+// All Premitive Data Types use Stack Memory.
+// All Non-Premitive Types use Heap Memory.
+
+let myYoutubename = "Priyanshu Kamani";
+let anotherName = myYoutubename;
+anotherName = "ChaiaurCode";
+console.log(anotherName);
+console.log(myYoutubename); //We are given Copy of myYoutubename 
+
+let user1 = {
+    name: "Pk",
+    email: "abc@gmail.com"
+};
+
+let user2 = user1;
+user2.email = "xyz@gmail.com";
+console.log(user1);
+console.log(user2);
+// Here we have given reference to user1 so when we change at uesr2 the value at main place user1 gets changed.
+
